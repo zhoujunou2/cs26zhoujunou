@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cs26zhoujunou Page</title>
+</head>
+<body>
+    <h1>Hello World from cs26zhoujunou</h1>
+    <div id="ipList"></div>
+    <h3 id="dt1"></h3>
+    <h3 id="dt2"></h3>
+<script>
+const date = new Date();
+const date1 = date.toLocaleString('en-uk', {
+hour12:true, weekday:"short", hour:"2-digit", minute:"2-digit", second:"2-digit",
+month:"short", year:"numeric", day:"2-digit"
+});
+document.getElementById("dt1").innerText = date1;
+document.getElementById("dt2").innerText = "" + Date.now();
+</script>
+</body>
+</html>
